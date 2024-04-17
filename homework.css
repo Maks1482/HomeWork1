@@ -1,0 +1,38 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Перший медіа-запит */
+@media only screen and (max-width: 600px) {
+    /* Стилі для divs і зображень на малих екранах */
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Другий медіа-запит */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+    /* Стилі для divs на екранах середнього розміру */
+    .content {
+        background-color: lightblue;
+        padding: 20px;
+    }
+}
